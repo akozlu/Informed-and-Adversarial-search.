@@ -1,7 +1,7 @@
 import sys
 import Tkinter
 
-import homework3
+import InformedSearch
 
 
 class Tile(Tkinter.Canvas):
