@@ -15,7 +15,7 @@ import math
 # Section 1: Tile Puzzle
 ############################################################
 
-
+#creates the Tile Puzzle object 
 def create_tile_puzzle(rows, cols):
     # pdb.set_trace()
     counter = count(1)
@@ -23,10 +23,9 @@ def create_tile_puzzle(rows, cols):
     c = cols - 1
     return TilePuzzle([[next(counter) if ((row * col is not r * c)) else 0 for col in xrange(cols)] for row in xrange(rows)])
 
-
 class TilePuzzle(object):
 
-    # Required
+    
     def __init__(self, board):
 
         self.board = board
@@ -280,7 +279,9 @@ class TilePuzzle(object):
                         came_from[nextBoard] = board
                         q.put((F, G, nextBoard))
 
+                        
 """
+Testing Purposes
 b = [[4, 1, 2], [0, 5, 3], [7, 8, 6]]
 p = TilePuzzle(b)
 print(p.find_solution_a_star())
