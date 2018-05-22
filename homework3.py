@@ -1,14 +1,8 @@
-############################################################
-# CIS 521: Homework 3
-############################################################
-
-student_name = "Ali Kozlu"
 
 ############################################################
 # Imports
 ############################################################
 
-# Include your imports here, if any are used.
 from itertools import *
 # import pdb
 import random
@@ -697,22 +691,3 @@ class DominoesGame(object):
     def get_best_move(self, vertical, limit):
         pass
 
-############################################################
-# Section 5: Feedback
-############################################################
-
-feedback_question_1 = """
-I spent around 12 hours. 
-"""
-
-feedback_question_2 = """
-By far the most challenging part for me was implementing IDDFS. First of all I could not implement it recursively. 
-I think I am much more comfortable implementing DFS with stacks, 
-so my recursive IDDFS was not functioning the way i wanted it to. So I gave up solving it recursively after some point.
-I implemented it correctly but struggled to understand why it was not efficient for depth > 10.
-Then I realized there were some ndoes that I shouldn't be expanding and managed to cut the search space significantly.
-"""
-
-feedback_question_3 = """
-I think the given GUI's for grid navigation and Tile Puzzle's very extremely helpful. I used them a lot to visually understand what was going on. 
-"""
